@@ -131,9 +131,6 @@ const functiongetuid = (email) => new Promise((resolve, reject) => {
             await page.click('.inputBox > .code > div > .active > b')
             await delay(2000);
 
-            await page.waitForSelector("button.onetrust-close-btn-handler.onetrust-close-btn-ui.banner-close-button.ot-close-icon")
-            await page.click("button.onetrust-close-btn-handler.onetrust-close-btn-ui.banner-close-button.ot-close-icon")
-            await delay(2000);
             //verif email
             let uuid;
             do {
